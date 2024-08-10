@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+   .container{
+    display: grid;
+    width: 748px;
+    height: 748px;
+    background-color:#000;
+    gap: 9px;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px  155px 22px;
+   }
+   .item{
+     background-color: #F0F1EC;
+
+   }
+   #Red{
+     background-color: #E72F24;
+   }
+   #upper2nd{
+    grid-column: 2/-1;;
+   }
+   #secondrow1{
+    grid-row: 2/4;
+   }
+   #secondrow2{
+    grid-area:2/2/4/4;
+   }
+   #secondrow3{
+    background-color:  #004592;
+    border-bottom: 10px solid ;
+    border-color: black;
+   }
+   #onepixel4{
+    background-color: #000;
+   }
+   #secondrow5{
+    grid-row: 3/-1 ;
+   }
+   #yellow{
+    background-color: #F9D01E;
+   }
+   #grey{
+    background-color: #232629;
+   }
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+   }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+     <div class="item" id="Red"></div>
+     <div class="item" id="upper2nd"></div>
+     <div class="item" id="secondrow1"></div>
+     <div class="item" id="secondrow2"></div>
+     <div class="item" id="secondrow3"></div>
+     <div class="item" id="secondrow5"></div>
+     <div class="item"></div>
+     <div class="item" id="yellow"></div>
+     <div class="item" id="grey"></div>
+    
+   </div>
+</body>
+
+</html>
